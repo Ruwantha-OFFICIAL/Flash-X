@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash X — Password Reset</title>
+  <style>
+    @font-face {
+      font-family: 'Oswald';
+      src: url('https://files.catbox.moe/3zisjz.ttf');
+    }
+    body, html { margin: 0; padding: 5px; background-color: #fff; font-family: 'Oswald', Arial, sans-serif; }
+    .wrapper { width: 100%; padding: 20px 0; background-color: #f0f4f8; }
+    .card { max-width: 480px; margin: 0 auto; background-color: #f4f9ff; border-radius: 20px; border: 2px solid #0a2540; border-top: 10px solid #0a2540; box-shadow: 0 10px 15px -3px rgba(10,37,64,0.3), 0 4px 6px -4px rgba(10,37,64,0.2); overflow: hidden; }
+    .logo-cell { text-align: center; padding: 24px 20px 8px; }
+    .body-cell { padding: 8px 20px; font-family: 'Oswald', Arial, sans-serif; font-size: 16px; color: #0a2540; letter-spacing: 1px; line-height: 1.8; }
+    .btn-cell { text-align: center; padding: 20px 20px 8px; }
+    .btn { display: inline-block; background-color: #0a2540; color: #ffffff; text-decoration: none; font-family: 'Oswald', Arial, sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.5px; padding: 14px 36px; border-radius: 10px; }
+    .fallback-cell { text-align: center; padding: 8px 20px 16px; font-family: 'Oswald', Arial, sans-serif; font-size: 12px; color: #6b7280; }
+    .fallback-link { color: #0a2540; word-break: break-all; }
+    .divider { border: none; border-top: 1px solid rgba(209,213,219,0.5); margin: 4px 20px 12px; }
+    .footer-cell { text-align: center; padding: 0 20px 20px; font-family: 'Oswald', Arial, sans-serif; font-size: 14px; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <table class="card" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+      <tr>
+        <td class="logo-cell">
+          <img src="https://i.ibb.co/fdh8011P/20261019-141622.png" alt="Flash X" border="0" width="100">
+        </td>
+      </tr>
+      <tr>
+        <td class="body-cell">
+          <p style="margin: 0;">
+            Hey,<br>
+            we received a request to reset your <strong>Flash X</strong> password.<br>
+            Click the button below to reset it. This link will expire in <strong>10 minutes</strong>.<br><br>
+            If you didn't request this, you can safely ignore this email.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="btn-cell">
+          <a href="{{{reset_link}}}" class="btn">Reset Password</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="fallback-cell">
+          Button not working? Copy and paste this link:<br>
+          <span class="fallback-link">{{{reset_link}}}</span>
+        </td>
+      </tr>
+      <tr>
+        <td><hr class="divider"></td>
+      </tr>
+      <tr>
+        <td class="footer-cell">&copy; 2026 Flash X Service</td>
+      </tr>
+    </table>
+  </div>
+</body>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0%" y="0%"
+	width="100%" height="100%"
+	viewBox="0 0 24.0 24.0"
+	enable-background="new 0 0 24.0 24.0"
+	xml:space="preserve">
+<defs>
+	<style type="text/css">
+		@font-face {
+			font-family: 'Oswald-VariableFont_wght'; 
+			src: url('./Oswald-VariableFont_wght.ttf');
+		}
+	</style>
+</defs>
+	<path
+		fill="#0A2540"
+		stroke="#0A2540"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.1412294"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M1.01,12.87L2.74,11.91L3.60,13.47L1.87,14.43z"/>
+	<path
+		fill="#0A2540"
+		stroke="#0A2540"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.1412294"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M1.92,10.28L3.65,9.32L4.52,10.88L2.78,11.84z"/>
+
+	<text 
+		font-size="4.3835115"
+		font-family="Oswald-VariableFont_wght"
+		stroke-width="0.24"
+		stroke="#0A2540"
+		stroke-opacity="1.000"
+		fill-opacity="0"
+		text-anchor="start"
+  		transform="rotate(-0.0 11.150884 12.222276) scale(1.4145428 1.0)" >
+		<tspan x="3.8330297" y="14.071776">Flash</tspan>
+	</text> 
+
+	<text 
+		font-size="4.3835115"
+		font-family="Oswald-VariableFont_wght"
+		fill="#0A2540"
+		stroke-width="0"
+		fill-opacity="1.000"
+		text-anchor="start"
+  		transform="rotate(-0.0 11.150884 12.222276) scale(1.4145428 1.0)" >
+
+		<tspan x="3.8330297" y="14.071776">Flash</tspan>
+	</text>
+
+	<text 
+		font-size="4.918671"
+		font-family="Oswald-VariableFont_wght"
+		stroke-width="0.24"
+		stroke="#0095FA"
+		stroke-opacity="1.000"
+		fill-opacity="0"
+		text-anchor="start"
+  		transform="rotate(-0.0 20.150887 12.222277) scale(2.398668 1.0)" >
+		<tspan x="7.2153645" y="14.297277">X</tspan>
+	</text> 
+
+	<text 
+		font-size="4.918671"
+		font-family="Oswald-VariableFont_wght"
+		fill="#0095FA"
+		stroke-width="0"
+		fill-opacity="1.000"
+		text-anchor="start"
+  		transform="rotate(-0.0 20.150887 12.222277) scale(2.398668 1.0)" >
+
+		<tspan x="7.2153645" y="14.297277">X</tspan>
+	</text>
+</svg>
