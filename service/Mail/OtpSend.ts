@@ -21,7 +21,7 @@ async function sendOtp(otp:string,email:string): Promise<void> {
     });
 
     console.log("Message sent! ID: %s", mail.messageId);
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error sending mail:", error);
     throw new Error(error.message);
 }
