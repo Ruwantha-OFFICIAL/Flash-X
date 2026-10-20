@@ -3,8 +3,8 @@ import { describe, test } from "node:test";
 import assert from "node:assert/strict";
 dotenv.config();
 
-import { sendOtp } from '../service/Mail/OtpSend.js';
-import { sendRest } from '../service/Mail/Password.js';
+import { sendOtp } from '../app/service/Mail/OtpSend.js';
+import { sendRest } from '../app/service/Mail/Password.js';
 
 describe("MailService Check ✔️",()=>{
   const emai = "ruwanthalasith20@gmail.com";
