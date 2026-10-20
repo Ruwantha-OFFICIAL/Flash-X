@@ -1,20 +1,24 @@
 import mongoose from "mongoose";
 
 declare global {
-  var database: any;
+  var database: mongoose.Mongoose | undefined;
 }
 
 export const db = async () => {
+  const uri = process.env.MONGODB_URI_LOCAL;
+  if (!uri) throw new Error("MONGODB_URI environment variable is not set");
+
+  if (global.database) return global.database;
+
   try {
-    if (!global.database) {
-      const sock = await mongoose.connect("mongodb://dbviewer:dbviewer@127.0.0.1:27017/flashdb?authSource=admin");
-      global.database = sock;
-      console.log("Database connected successfully");
-    }
+    const sock = await mongoose.connect(uri, {
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
+    });
+    global.database = sock;
+    console.log("Database connected");
     return global.database;
-  } catch (error: any) {
-    throw new Error(error.message);
+  } catch (error:any) {
+    throw new Error(`DB connection failed: ${error instanceof Error ? error.message : error}`);
   }
 };
-
-db();

@@ -15,7 +15,7 @@ export default async function getTransport(): Promise<Transporter | undefined> {
         secure: false,
         auth: {
           user: "flashxicn@gmail.com",
-          pass: "czxgbuakhhsmefpg",
+          pass: process.env.SMTP_PASS,
         },
       });
       await  global.transport.verify();
@@ -24,7 +24,7 @@ export default async function getTransport(): Promise<Transporter | undefined> {
 
     return global.transport;
   } catch (error) {
-    console.error('Failed to create transport:', error);
+    console.error('Failed to create transport:', error.message);
     return undefined;
   }
 }

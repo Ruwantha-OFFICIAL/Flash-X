@@ -2,14 +2,15 @@ name: test all service
 
 on:
   push:
+    branches:
+      - "main"
+      
     paths:
       - "**.ts"
       - "**.js"
       - "**.json"
       - "**.html"
       - "./.github/workflows/test.yml"
-    branches:
-      - "main"
 
 env:
   SMTP_USER: "flashxicn@gmail.com"
