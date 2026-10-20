@@ -3,13 +3,17 @@ name: test all service
 on:
   push:
     paths:
-      - "./**/*.{js,ts,json,html}"
+      - "**.ts"
+      - "**.js"
+      - "**.json"
+      - "**.html"
+      - "./.github/workflows/test.yml"
     branches:
       - "main"
 
 env:
   SMTP_USER: "flashxicn@gmail.com"
-  SMTP_PASS: "czxgbuakhhsmefpg"
+  SMTP_PASS: ${{secrets.APP_PASSWD}}
 
 jobs:
   test_all:
