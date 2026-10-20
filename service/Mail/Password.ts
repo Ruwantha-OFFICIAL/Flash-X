@@ -1,5 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config(); 
 import {
   readTmplet
 } from '../../libs/function.js'
@@ -15,8 +13,6 @@ async function sendRest(link:string,email:string): Promise<void> {
 
   try {
     console.log("Sending mail...");
-    await  transport.verify();
-    console.log("Done verify")
     const mail = await transport.sendMail({
       from: `Flash X • ${process.env.SMTP_USER}`,
       to: email, 

@@ -18,6 +18,8 @@ export default async function getTransport(): Promise<Transporter | undefined> {
           pass: "czxgbuakhhsmefpg",
         },
       });
+      await  global.transport.verify();
+      console.log('smtp server Done ✅')
     }
 
     return global.transport;

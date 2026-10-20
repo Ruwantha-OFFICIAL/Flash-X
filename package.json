@@ -28,6 +28,7 @@
     "@react-router/dev": "^8.4.0",
     "@tailwindcss/vite": "^4.2.2",
     "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
     "@types/node": "^22",
     "@types/nodemailer": "^8.0.2",
     "@types/react": "^19.2.18",
