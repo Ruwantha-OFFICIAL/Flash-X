@@ -17,7 +17,7 @@ async function sendRest(link:string,email:string): Promise<void> {
       from: `Flash X • ${process.env.SMTP_USER}`,
       to: email, 
       subject: "very testing",
-      html: readTmplet("./assets/restTemplet.html").replaceAll("{{{reset_link}}}",link)
+      html: readTmplet("./app/assets/restTemplet.html").replaceAll("{{{reset_link}}}",link)
     });
 
     console.log("Message sent! ID: %s", mail.messageId);

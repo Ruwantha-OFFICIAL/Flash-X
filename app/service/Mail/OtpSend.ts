@@ -17,7 +17,7 @@ async function sendOtp(otp:string,email:string): Promise<void> {
       from: `Flash X • ${process.env.SMTP_USER}`,
       to: email, 
       subject: "very testing",
-      html: readTmplet("./assets/otpTempted.html").replace("{{otp}}",otp)
+      html: readTmplet("./app/assets/otpTempted.html").replace("{{otp}}",otp)
     });
 
     console.log("Message sent! ID: %s", mail.messageId);
