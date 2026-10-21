@@ -28,7 +28,7 @@ const tmpUser = new Schema<ITmpUser>({
     required: true
   },
   group: {
-    type: String,
+    type: Number,
     required: true
   }
 });

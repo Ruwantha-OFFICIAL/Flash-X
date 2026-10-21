@@ -18,10 +18,14 @@ const otp = new Schema<IOtp>({
     type: String,
     required: true
   },
+  url:{
+    type: String,
+    required: true
+  },
   createdAt: {
     type: Date,
     default: Date.now(),
-    expires: 500
+    expires: 200
   }
 });
 
