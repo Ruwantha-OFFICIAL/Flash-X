@@ -22,7 +22,8 @@
     "nodemailer": "^10.0.12",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-router": "^8.4.0"
+    "react-router": "^8.4.0",
+    "redis": "^6.3.0"
   },
   "devDependencies": {
     "@react-router/dev": "^8.4.0",

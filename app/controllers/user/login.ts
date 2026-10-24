@@ -1,6 +1,6 @@
 import tempUsers from "../../model/temp.js";
 import users from "../../model/user.js";
-import otps from "../model/otps.js";
+import otps from "../../model/otps.js";
 import { genrater } from "../../libs/function.js";
 import { sendOtp } from "../../service/Mail/Otpsend.js";
 
@@ -25,6 +25,7 @@ async function Login(
         message: "Missing required fields"
       };
     }
+
     const query = email
       ? { email: email, password: passwd }
       : { user_name: userName, password: passwd };

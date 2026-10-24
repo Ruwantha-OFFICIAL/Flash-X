@@ -1,5 +1,14 @@
 import fs from 'fs';
 
+type group = 0 | 1 | 2;
+
+const amount:Record<group,number> = {
+  0: 1000,
+  1: 2000,
+  2: 4000
+}
+
+
 export function readTmplet(path: string): string {
   try {
     const text = fs.readFileSync(path, "utf-8");
@@ -37,4 +46,8 @@ export function genrater(t:typeOfGenrate):string{
   } catch (error) {
     throw new Error(error.message)
   }
+}
+
+export {
+  amount
 }

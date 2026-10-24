@@ -1,24 +1,26 @@
-import mongoose,{
+import mongoose, {
   Schema,
   Model,
   Document
-} from "mongoose"
+} from "mongoose";
 
 export interface IOtp extends Document {
   user_name: string;
   otp_code: string;
+  url: string;
+  createdAt?: any;
 }
 
 const otp = new Schema<IOtp>({
   user_name: {
     type: String,
     required: true
-  }, 
-  otp_code:{
+  },
+  otp_code: {
     type: String,
     required: true
   },
-  url:{
+  url: {
     type: String,
     required: true
   },
@@ -29,6 +31,6 @@ const otp = new Schema<IOtp>({
   }
 });
 
-const otps: Model<IOtp> = mongoose.models.otps || mongoose.model("otps",otp)
+const otps: Model<IOtp> = mongoose.models.otps || mongoose.model("otps", otp);
 
 export default otps;

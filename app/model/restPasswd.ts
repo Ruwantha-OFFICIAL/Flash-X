@@ -1,17 +1,17 @@
-import mongoose,{
+import mongoose, {
   Model,
   Schema,
   Document
-} from "mongoose"
+} from "mongoose";
 
 export interface IRest extends Document {
   user_name: string;
-  token: string
+  token: string;
 }
 
 const rest = new Schema<IRest>({
   user_name: {
-    type: String, 
+    type: String,
     required: true
   },
   token: {
